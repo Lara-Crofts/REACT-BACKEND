@@ -32,7 +32,7 @@ app.use(bodyParser.json());
 
 const pool = mysql.createPool({
   host: 'sql3.freesqldatabase.com',
-  user: 'sql3679247t',
+  user: 'sql3679247',
   password: '5F6argcfYL',
   database: 'sql3679247'
 });
