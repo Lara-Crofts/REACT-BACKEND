@@ -23,11 +23,18 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// const pool = mysql.createPool({
+//   host: 'localhost',
+//   user: 'root',
+//   password: 'password',
+//   database: 'SweaterProducts'
+// });
+
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'password',
-  database: 'SweaterProducts'
+  host: 'sql3.freesqldatabase.com',
+  user: 'sql3679247t',
+  password: '5F6argcfYL',
+  database: 'sql3679247'
 });
 
 app.get('/products', async (req, res) => {
